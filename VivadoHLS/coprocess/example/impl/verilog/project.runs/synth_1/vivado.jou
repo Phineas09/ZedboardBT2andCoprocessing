@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jun  6 13:21:40 2021
+# Process ID: 13652
+# Current directory: D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/project.runs/synth_1
+# Command line: vivado.exe -log xillybus_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xillybus_wrapper.tcl
+# Log file: D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/project.runs/synth_1/xillybus_wrapper.vds
+# Journal file: D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source xillybus_wrapper.tcl -notrace

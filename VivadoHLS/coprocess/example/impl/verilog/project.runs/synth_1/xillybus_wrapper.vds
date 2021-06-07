@@ -1,0 +1,1196 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jun  6 13:21:40 2021
+# Process ID: 13652
+# Current directory: D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/project.runs/synth_1
+# Command line: vivado.exe -log xillybus_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xillybus_wrapper.tcl
+# Log file: D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/project.runs/synth_1/xillybus_wrapper.vds
+# Journal file: D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source xillybus_wrapper.tcl -notrace
+Command: synth_design -top xillybus_wrapper -part xc7z020clg484-1 -directive sdx_optimization_effort_high -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2504 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 744.621 ; gain = 177.676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 27'b000000000000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 27'b000000000000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 27'b000000000000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 27'b000000000000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 27'b000000000000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 27'b000000000000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 27'b000000000000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 27'b000000000000000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 27'b000000000000000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 27'b000000000000000001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 27'b000000000000000010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 27'b000000000000000100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 27'b000000000000001000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 27'b000000000000010000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 27'b000000000000100000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 27'b000000000001000000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 27'b000000000010000000000000000 
+	Parameter ap_ST_fsm_state18 bound to: 27'b000000000100000000000000000 
+	Parameter ap_ST_fsm_state19 bound to: 27'b000000001000000000000000000 
+	Parameter ap_ST_fsm_state20 bound to: 27'b000000010000000000000000000 
+	Parameter ap_ST_fsm_state21 bound to: 27'b000000100000000000000000000 
+	Parameter ap_ST_fsm_state22 bound to: 27'b000001000000000000000000000 
+	Parameter ap_ST_fsm_state23 bound to: 27'b000010000000000000000000000 
+	Parameter ap_ST_fsm_state24 bound to: 27'b000100000000000000000000000 
+	Parameter ap_ST_fsm_state25 bound to: 27'b001000000000000000000000000 
+	Parameter ap_ST_fsm_state26 bound to: 27'b010000000000000000000000000 
+	Parameter ap_ST_fsm_state27 bound to: 27'b100000000000000000000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:94]
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_cud' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_cud.v:39]
+	Parameter DataWidth bound to: 7 - type: integer 
+	Parameter AddressRange bound to: 14 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_cud_rom' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_cud.v:6]
+	Parameter DWIDTH bound to: 7 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 14 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_cud.v:18]
+INFO: [Synth 8-3876] $readmem data file './xillybus_wrapper_cud_rom.dat' is read successfully [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_cud.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_cud_rom' (1#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_cud.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_cud' (2#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_cud.v:39]
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_dEe' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_dEe.v:39]
+	Parameter DataWidth bound to: 7 - type: integer 
+	Parameter AddressRange bound to: 4 - type: integer 
+	Parameter AddressWidth bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_dEe_rom' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_dEe.v:6]
+	Parameter DWIDTH bound to: 7 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+	Parameter MEM_SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_dEe.v:18]
+INFO: [Synth 8-3876] $readmem data file './xillybus_wrapper_dEe_rom.dat' is read successfully [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_dEe.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_dEe_rom' (3#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_dEe.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_dEe' (4#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_dEe.v:39]
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_eOg' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_eOg.v:39]
+	Parameter DataWidth bound to: 4 - type: integer 
+	Parameter AddressRange bound to: 2 - type: integer 
+	Parameter AddressWidth bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_eOg_rom' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_eOg.v:6]
+	Parameter DWIDTH bound to: 4 - type: integer 
+	Parameter AWIDTH bound to: 1 - type: integer 
+	Parameter MEM_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_eOg.v:18]
+INFO: [Synth 8-3876] $readmem data file './xillybus_wrapper_eOg_rom.dat' is read successfully [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_eOg.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_eOg_rom' (5#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_eOg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_eOg' (6#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_eOg.v:39]
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_fYi' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_fYi.v:39]
+	Parameter DataWidth bound to: 100 - type: integer 
+	Parameter AddressRange bound to: 13 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_fYi_rom' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_fYi.v:6]
+	Parameter DWIDTH bound to: 100 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 13 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_fYi.v:18]
+INFO: [Synth 8-3876] $readmem data file './xillybus_wrapper_fYi_rom.dat' is read successfully [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_fYi.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_fYi_rom' (7#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_fYi.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_fYi' (8#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_fYi.v:39]
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_g8j' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_g8j.v:39]
+	Parameter DataWidth bound to: 30 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_g8j_rom' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_g8j.v:6]
+	Parameter DWIDTH bound to: 30 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_g8j.v:18]
+INFO: [Synth 8-3876] $readmem data file './xillybus_wrapper_g8j_rom.dat' is read successfully [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_g8j.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_g8j_rom' (9#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_g8j.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_g8j' (10#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_g8j.v:39]
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_hbi' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_hbi.v:39]
+	Parameter DataWidth bound to: 23 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_hbi_rom' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_hbi.v:6]
+	Parameter DWIDTH bound to: 23 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_hbi.v:18]
+INFO: [Synth 8-3876] $readmem data file './xillybus_wrapper_hbi_rom.dat' is read successfully [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_hbi.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_hbi_rom' (11#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_hbi.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_hbi' (12#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_hbi.v:39]
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_ibs' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_ibs.v:39]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_ibs_rom' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_ibs.v:6]
+	Parameter DWIDTH bound to: 15 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_ibs.v:18]
+INFO: [Synth 8-3876] $readmem data file './xillybus_wrapper_ibs_rom.dat' is read successfully [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_ibs.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_ibs_rom' (13#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_ibs.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_ibs' (14#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_ibs.v:39]
+INFO: [Synth 8-6157] synthesizing module 'scaled_fixed2ieee' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/scaled_fixed2ieee.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_state3 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state4 bound to: 4'b1000 
+	Parameter ap_const_lv32_0 bound to: 0 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/scaled_fixed2ieee.v:44]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/scaled_fixed2ieee.v:402]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/scaled_fixed2ieee.v:404]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/scaled_fixed2ieee.v:430]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/scaled_fixed2ieee.v:434]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/scaled_fixed2ieee.v:442]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/scaled_fixed2ieee.v:444]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/scaled_fixed2ieee.v:452]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/scaled_fixed2ieee.v:494]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_phi_mux_p_Val2_s_phi_fu_155_p4_reg' and it is trimmed from '29' to '28' bits. [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/scaled_fixed2ieee.v:259]
+INFO: [Synth 8-6155] done synthesizing module 'scaled_fixed2ieee' (15#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/scaled_fixed2ieee.v:10]
+INFO: [Synth 8-6157] synthesizing module 'xilly_decprint' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xilly_decprint.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 7'b0000001 
+	Parameter ap_ST_fsm_state2 bound to: 7'b0000010 
+	Parameter ap_ST_fsm_state3 bound to: 7'b0000100 
+	Parameter ap_ST_fsm_state4 bound to: 7'b0001000 
+	Parameter ap_ST_fsm_state5 bound to: 7'b0010000 
+	Parameter ap_ST_fsm_state6 bound to: 7'b0100000 
+	Parameter ap_ST_fsm_state7 bound to: 7'b1000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xilly_decprint.v:47]
+INFO: [Synth 8-6157] synthesizing module 'xilly_decprint_pobkb' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xilly_decprint_pobkb.v:39]
+	Parameter DataWidth bound to: 28 - type: integer 
+	Parameter AddressRange bound to: 10 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xilly_decprint_pobkb_rom' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xilly_decprint_pobkb.v:6]
+	Parameter DWIDTH bound to: 28 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 10 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xilly_decprint_pobkb.v:18]
+INFO: [Synth 8-3876] $readmem data file './xilly_decprint_pobkb_rom.dat' is read successfully [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xilly_decprint_pobkb.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'xilly_decprint_pobkb_rom' (16#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xilly_decprint_pobkb.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xilly_decprint_pobkb' (17#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xilly_decprint_pobkb.v:39]
+INFO: [Synth 8-6157] synthesizing module 'xilly_decprint_out' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xilly_decprint_out.v:40]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 11 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xilly_decprint_out_ram' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xilly_decprint_out.v:6]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 11 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xilly_decprint_out.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'xilly_decprint_out_ram' (18#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xilly_decprint_out.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xilly_decprint_out' (19#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xilly_decprint_out.v:40]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xilly_decprint.v:363]
+INFO: [Synth 8-6155] done synthesizing module 'xilly_decprint' (20#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xilly_decprint.v:10]
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_jbC' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_jbC.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 80 - type: integer 
+	Parameter din1_WIDTH bound to: 24 - type: integer 
+	Parameter dout_WIDTH bound to: 104 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_jbC_MulnS_0' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_jbC.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_jbC_MulnS_0' (21#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_jbC.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_jbC' (22#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_jbC.v:35]
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_kbM' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_kbM.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 1 - type: integer 
+	Parameter din2_WIDTH bound to: 1 - type: integer 
+	Parameter din3_WIDTH bound to: 1 - type: integer 
+	Parameter din4_WIDTH bound to: 1 - type: integer 
+	Parameter din5_WIDTH bound to: 1 - type: integer 
+	Parameter din6_WIDTH bound to: 1 - type: integer 
+	Parameter din7_WIDTH bound to: 1 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_kbM' (23#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_kbM.v:8]
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_lbW' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_lbW.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 1 - type: integer 
+	Parameter din2_WIDTH bound to: 1 - type: integer 
+	Parameter din3_WIDTH bound to: 1 - type: integer 
+	Parameter din4_WIDTH bound to: 1 - type: integer 
+	Parameter din5_WIDTH bound to: 1 - type: integer 
+	Parameter din6_WIDTH bound to: 1 - type: integer 
+	Parameter din7_WIDTH bound to: 1 - type: integer 
+	Parameter din8_WIDTH bound to: 1 - type: integer 
+	Parameter din9_WIDTH bound to: 1 - type: integer 
+	Parameter din10_WIDTH bound to: 1 - type: integer 
+	Parameter din11_WIDTH bound to: 1 - type: integer 
+	Parameter din12_WIDTH bound to: 1 - type: integer 
+	Parameter din13_WIDTH bound to: 1 - type: integer 
+	Parameter din14_WIDTH bound to: 1 - type: integer 
+	Parameter din15_WIDTH bound to: 1 - type: integer 
+	Parameter din16_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_lbW' (24#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_lbW.v:8]
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_mb6' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_mb6.v:13]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 15 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_mb6_DSP48_0' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_mb6.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_mb6_DSP48_0' (25#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_mb6.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_mb6' (26#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_mb6.v:13]
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_ncg' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_ncg.v:13]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 15 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xillybus_wrapper_ncg_DSP48_1' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_ncg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_ncg_DSP48_1' (27#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_ncg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper_ncg' (28#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_ncg.v:13]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1031]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1127]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1161]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1163]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1209]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1211]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1229]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1231]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1233]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1235]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1237]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1239]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1241]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1243]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1279]
+INFO: [Synth 8-6155] done synthesizing module 'xillybus_wrapper' (29#1) [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:12]
+WARNING: [Synth 8-3331] design xillybus_wrapper_jbC has unconnected port reset
+WARNING: [Synth 8-3331] design xilly_decprint_out has unconnected port reset
+WARNING: [Synth 8-3331] design xilly_decprint_pobkb has unconnected port reset
+WARNING: [Synth 8-3331] design xilly_decprint has unconnected port debug_ready[7]
+WARNING: [Synth 8-3331] design xilly_decprint has unconnected port debug_ready[6]
+WARNING: [Synth 8-3331] design xilly_decprint has unconnected port debug_ready[5]
+WARNING: [Synth 8-3331] design xilly_decprint has unconnected port debug_ready[4]
+WARNING: [Synth 8-3331] design xilly_decprint has unconnected port debug_ready[3]
+WARNING: [Synth 8-3331] design xilly_decprint has unconnected port debug_ready[2]
+WARNING: [Synth 8-3331] design xilly_decprint has unconnected port debug_ready[1]
+WARNING: [Synth 8-3331] design xillybus_wrapper_ibs has unconnected port reset
+WARNING: [Synth 8-3331] design xillybus_wrapper_hbi has unconnected port reset
+WARNING: [Synth 8-3331] design xillybus_wrapper_g8j has unconnected port reset
+WARNING: [Synth 8-3331] design xillybus_wrapper_fYi has unconnected port reset
+WARNING: [Synth 8-3331] design xillybus_wrapper_eOg has unconnected port reset
+WARNING: [Synth 8-3331] design xillybus_wrapper_dEe has unconnected port reset
+WARNING: [Synth 8-3331] design xillybus_wrapper_cud has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 811.594 ; gain = 244.648
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 811.594 ; gain = 244.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 811.594 ; gain = 244.648
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.xdc]
+Finished Parsing XDC File [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 940.656 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.269 . Memory (MB): peak = 952.594 ; gain = 11.938
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 952.594 ; gain = 385.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 952.594 ; gain = 385.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 952.594 ; gain = 385.648
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_Val2_s_reg_152_reg' and it is trimmed from '29' to '28' bits. [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/scaled_fixed2ieee.v:190]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+WARNING: [Synth 8-3936] Found unconnected internal register 'trunc_ln6_reg_297_reg' and it is trimmed from '5' to '4' bits. [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xilly_decprint.v:198]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4471] merging register 'zext_ln7_1_reg_1197_reg[7:7]' into 'zext_ln7_reg_1162_reg[7:7]' [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1380]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1189]
+WARNING: [Synth 8-6014] Unused sequential element trunc_ln1_reg_1390_reg was removed.  [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:725]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 952.594 ; gain = 385.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     58 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     30 Bit       Adders := 1     
+	   2 Input     29 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 3     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	              104 Bit    Registers := 3     
+	              100 Bit    Registers := 1     
+	               80 Bit    Registers := 2     
+	               64 Bit    Registers := 2     
+	               58 Bit    Registers := 3     
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 9     
+	               31 Bit    Registers := 1     
+	               30 Bit    Registers := 3     
+	               29 Bit    Registers := 5     
+	               28 Bit    Registers := 3     
+	               27 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               23 Bit    Registers := 3     
+	               18 Bit    Registers := 1     
+	               15 Bit    Registers := 4     
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 5     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 18    
++---Multipliers : 
+	                24x80  Multipliers := 1     
+	                30x30  Multipliers := 1     
++---Muxes : 
+	   2 Input     58 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input     29 Bit        Muxes := 2     
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 2     
+	  28 Input     27 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 2     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 10    
+	   2 Input      7 Bit        Muxes := 2     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	  33 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 55    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module xillybus_wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     58 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     30 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               80 Bit    Registers := 1     
+	               58 Bit    Registers := 3     
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 3     
+	               27 Bit    Registers := 1     
+	               23 Bit    Registers := 2     
+	               18 Bit    Registers := 1     
+	               15 Bit    Registers := 3     
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---Multipliers : 
+	                30x30  Multipliers := 1     
++---Muxes : 
+	   2 Input     58 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 2     
+	  28 Input     27 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 8     
+	   2 Input      6 Bit        Muxes := 1     
+	  33 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module xillybus_wrapper_cud_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+Module xillybus_wrapper_dEe_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+Module xillybus_wrapper_eOg_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module xillybus_wrapper_fYi_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	              100 Bit    Registers := 1     
+Module xillybus_wrapper_g8j_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               30 Bit    Registers := 1     
+Module xillybus_wrapper_hbi_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               23 Bit    Registers := 1     
+Module xillybus_wrapper_ibs_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+Module scaled_fixed2ieee 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     29 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               31 Bit    Registers := 1     
+	               29 Bit    Registers := 2     
+	               28 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module xilly_decprint_pobkb_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               28 Bit    Registers := 1     
+Module xilly_decprint_out_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module xilly_decprint 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               30 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module xillybus_wrapper_jbC_MulnS_0 
+Detailed RTL Component Info : 
++---Registers : 
+	              104 Bit    Registers := 3     
+	               80 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
++---Multipliers : 
+	                24x80  Multipliers := 1     
+Module xillybus_wrapper_kbM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+Module xillybus_wrapper_lbW 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element trunc_ln1_reg_1390_reg was removed.  [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:725]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:1201]
+WARNING: [Synth 8-6014] Unused sequential element result_V_reg_1410_reg was removed.  [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper.v:393]
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+WARNING: [Synth 8-3936] Found unconnected internal register 'xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg' and it is trimmed from '104' to '80' bits. [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_jbC.v:22]
+WARNING: [Synth 8-3936] Found unconnected internal register 'xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg' and it is trimmed from '104' to '80' bits. [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_jbC.v:29]
+WARNING: [Synth 8-3936] Found unconnected internal register 'xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg' and it is trimmed from '104' to '80' bits. [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_jbC.v:28]
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 5 [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_jbC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg was removed.  [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_jbC.v:28]
+WARNING: [Synth 8-6014] Unused sequential element xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg was removed.  [D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/xillybus_wrapper_jbC.v:28]
+DSP Report: Generating DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg, operation Mode is: (A2*B'')'.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg.
+DSP Report: operator xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg.
+DSP Report: operator xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg.
+DSP Report: Generating DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product, operation Mode is: (PCIN>>17)+(A2*B'')'.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product.
+DSP Report: operator xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product.
+DSP Report: operator xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product.
+DSP Report: Generating DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg, operation Mode is: (PCIN>>17)+(A2*B'')'.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg.
+DSP Report: operator xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg.
+DSP Report: operator xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg.
+DSP Report: Generating DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product, operation Mode is: (PCIN>>17)+(A''*B'')'.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product.
+DSP Report: operator xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product.
+DSP Report: operator xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product.
+DSP Report: Generating DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg, operation Mode is: (PCIN>>17)+(A''*B'')'.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff0_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg.
+DSP Report: register xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg.
+DSP Report: operator xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg.
+DSP Report: operator xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/tmp_product is absorbed into DSP xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg.
+DSP Report: Generating DSP r_V_12_fu_838_p2, operation Mode is: A2*B2.
+DSP Report: register r_V_12_fu_838_p2 is absorbed into DSP r_V_12_fu_838_p2.
+DSP Report: register r_V_12_fu_838_p2 is absorbed into DSP r_V_12_fu_838_p2.
+DSP Report: operator r_V_12_fu_838_p2 is absorbed into DSP r_V_12_fu_838_p2.
+DSP Report: operator r_V_12_fu_838_p2 is absorbed into DSP r_V_12_fu_838_p2.
+DSP Report: Generating DSP trunc_ln1_reg_1390_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register second_order_float_6_reg_1380_reg is absorbed into DSP trunc_ln1_reg_1390_reg.
+DSP Report: register trunc_ln1_reg_1390_reg is absorbed into DSP trunc_ln1_reg_1390_reg.
+DSP Report: register trunc_ln1_reg_1390_reg is absorbed into DSP trunc_ln1_reg_1390_reg.
+DSP Report: operator r_V_12_fu_838_p2 is absorbed into DSP trunc_ln1_reg_1390_reg.
+DSP Report: operator r_V_12_fu_838_p2 is absorbed into DSP trunc_ln1_reg_1390_reg.
+DSP Report: Generating DSP xillybus_wrapper_mb6_U12/xillybus_wrapper_mb6_DSP48_0_U/p, operation Mode is: A2*B2.
+DSP Report: register B_trunc_V_reg_1350_reg is absorbed into DSP xillybus_wrapper_mb6_U12/xillybus_wrapper_mb6_DSP48_0_U/p.
+DSP Report: register B_trunc_V_reg_1350_reg is absorbed into DSP xillybus_wrapper_mb6_U12/xillybus_wrapper_mb6_DSP48_0_U/p.
+DSP Report: operator xillybus_wrapper_mb6_U12/xillybus_wrapper_mb6_DSP48_0_U/p is absorbed into DSP xillybus_wrapper_mb6_U12/xillybus_wrapper_mb6_DSP48_0_U/p.
+DSP Report: Generating DSP xillybus_wrapper_ncg_U13/xillybus_wrapper_ncg_DSP48_1_U/p, operation Mode is: A2*B2.
+DSP Report: register second_order_float_8_reg_1385_reg is absorbed into DSP xillybus_wrapper_ncg_U13/xillybus_wrapper_ncg_DSP48_1_U/p.
+DSP Report: register xillybus_wrapper_ncg_U13/xillybus_wrapper_ncg_DSP48_1_U/p is absorbed into DSP xillybus_wrapper_ncg_U13/xillybus_wrapper_ncg_DSP48_1_U/p.
+DSP Report: operator xillybus_wrapper_ncg_U13/xillybus_wrapper_ncg_DSP48_1_U/p is absorbed into DSP xillybus_wrapper_ncg_U13/xillybus_wrapper_ncg_DSP48_1_U/p.
+DSP Report: Generating DSP r_V_14_fu_908_p2, operation Mode is: A*B2.
+DSP Report: register ret_V_reg_1405_reg is absorbed into DSP r_V_14_fu_908_p2.
+DSP Report: operator r_V_14_fu_908_p2 is absorbed into DSP r_V_14_fu_908_p2.
+DSP Report: operator r_V_14_fu_908_p2 is absorbed into DSP r_V_14_fu_908_p2.
+DSP Report: Generating DSP result_V_reg_1410_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register ret_V_reg_1405_reg is absorbed into DSP result_V_reg_1410_reg.
+DSP Report: register result_V_reg_1410_reg is absorbed into DSP result_V_reg_1410_reg.
+DSP Report: operator r_V_14_fu_908_p2 is absorbed into DSP result_V_reg_1410_reg.
+DSP Report: operator r_V_14_fu_908_p2 is absorbed into DSP result_V_reg_1410_reg.
+DSP Report: Generating DSP r_V_14_fu_908_p2, operation Mode is: A2*B.
+DSP Report: register r_V_14_fu_908_p2 is absorbed into DSP r_V_14_fu_908_p2.
+DSP Report: operator r_V_14_fu_908_p2 is absorbed into DSP r_V_14_fu_908_p2.
+DSP Report: operator r_V_14_fu_908_p2 is absorbed into DSP r_V_14_fu_908_p2.
+DSP Report: Generating DSP result_V_reg_1410_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register result_V_reg_1410_reg is absorbed into DSP result_V_reg_1410_reg.
+DSP Report: register result_V_reg_1410_reg is absorbed into DSP result_V_reg_1410_reg.
+DSP Report: operator r_V_14_fu_908_p2 is absorbed into DSP result_V_reg_1410_reg.
+DSP Report: operator r_V_14_fu_908_p2 is absorbed into DSP result_V_reg_1410_reg.
+WARNING: [Synth 8-3331] design xilly_decprint has unconnected port debug_ready[7]
+WARNING: [Synth 8-3331] design xilly_decprint has unconnected port debug_ready[6]
+WARNING: [Synth 8-3331] design xilly_decprint has unconnected port debug_ready[5]
+WARNING: [Synth 8-3331] design xilly_decprint has unconnected port debug_ready[4]
+WARNING: [Synth 8-3331] design xilly_decprint has unconnected port debug_ready[3]
+WARNING: [Synth 8-3331] design xilly_decprint has unconnected port debug_ready[2]
+WARNING: [Synth 8-3331] design xilly_decprint has unconnected port debug_ready[1]
+WARNING: [Synth 8-3331] design xillybus_wrapper_ibs has unconnected port reset
+WARNING: [Synth 8-3331] design xillybus_wrapper_hbi has unconnected port reset
+WARNING: [Synth 8-3331] design xillybus_wrapper_g8j has unconnected port reset
+INFO: [Synth 8-3886] merging instance 'ref_4oPi_table_100_V_U/xillybus_wrapper_fYi_rom_U/q0_reg[70]' (FDE) to 'ref_4oPi_table_100_V_U/xillybus_wrapper_fYi_rom_U/q0_reg[84]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[4]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[5]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[5]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[6]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[6]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[7]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[7]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[8]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[8]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[9]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[9]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[10]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[10]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[11]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[11]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[12]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[12]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[13]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[13]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[14]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[14]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[15]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[15]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[16]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[16]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[17]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[17]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[18]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[18]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[19]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[19]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[20]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[20]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[21]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[21]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[22]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[22]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[23]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[23]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[24]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[24]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[25]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[25]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[26]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[26]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[27]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[27]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[28]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[28]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[29]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[29]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[30]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[30]' (FDRE) to 'grp_xilly_decprint_fu_347/first_0_reg_89_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln37_reg_273_reg[31]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3886] merging instance 'ref_4oPi_table_100_V_U/xillybus_wrapper_fYi_rom_U/q0_reg[96]' (FDE) to 'ref_4oPi_table_100_V_U/xillybus_wrapper_fYi_rom_U/q0_reg[99]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/powers10_U/xilly_decprint_pobkb_rom_U/q0_reg[11]' (FDE) to 'grp_xilly_decprint_fu_347/powers10_U/xilly_decprint_pobkb_rom_U/q0_reg[25]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/powers10_U/xilly_decprint_pobkb_rom_U/q0_reg[20]' (FDE) to 'grp_xilly_decprint_fu_347/powers10_U/xilly_decprint_pobkb_rom_U/q0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/powers10_U/xilly_decprint_pobkb_rom_U/q0_reg[21]' (FDE) to 'grp_xilly_decprint_fu_347/powers10_U/xilly_decprint_pobkb_rom_U/q0_reg[22]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/powers10_U/xilly_decprint_pobkb_rom_U/q0_reg[22]' (FDE) to 'grp_xilly_decprint_fu_347/powers10_U/xilly_decprint_pobkb_rom_U/q0_reg[26]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/powers10_U/xilly_decprint_pobkb_rom_U/q0_reg[25]' (FDE) to 'grp_xilly_decprint_fu_347/powers10_U/xilly_decprint_pobkb_rom_U/q0_reg[27]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (second_order_float_s_U/\xillybus_wrapper_ibs_rom_U/q0_reg[14] )
+INFO: [Synth 8-3886] merging instance 'add_ln9_1_reg_1192_reg[0]' (FDE) to 'p_str4_U/xillybus_wrapper_dEe_rom_U/q0_reg[3]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[11]' (FDE) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[25]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[20]' (FDE) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[21]' (FDE) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[22]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[22]' (FDE) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[26]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[25]' (FDE) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[27]'
+INFO: [Synth 8-3886] merging instance 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[30]' (FD) to 'grp_xilly_decprint_fu_347/zext_ln39_1_reg_302_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_xilly_decprint_fu_347/\zext_ln39_1_reg_302_reg[31] )
+INFO: [Synth 8-3886] merging instance 'isNeg_reg_1314_reg[0]' (FDE) to 'Ex_V_reg_1309_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ush_reg_1319_reg[0]' (FDE) to 'Ex_V_reg_1309_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[18]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/out_bits_0_V_reg_467_reg[15]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[17]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[16]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[14]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/out_bits_0_V_reg_467_reg[14]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[15]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_scaled_fixed2ieee_fu_341/\out_bits_0_V_reg_467_reg[15] )
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[13]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/out_bits_0_V_reg_467_reg[13]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[12]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/out_bits_0_V_reg_467_reg[12]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[11]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/out_bits_0_V_reg_467_reg[11]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[10]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/out_bits_0_V_reg_467_reg[10]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[9]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/out_bits_0_V_reg_467_reg[9]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[8]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/out_bits_0_V_reg_467_reg[8]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[7]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/out_bits_0_V_reg_467_reg[7]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[6]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/out_bits_0_V_reg_467_reg[6]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[5]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/out_bits_0_V_reg_467_reg[5]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[4]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/out_bits_0_V_reg_467_reg[4]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[3]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/out_bits_0_V_reg_467_reg[3]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[2]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Synth 8-3886] merging instance 'grp_scaled_fixed2ieee_fu_341/out_bits_0_V_reg_467_reg[2]' (FDE) to 'grp_scaled_fixed2ieee_fu_341/p_Result_s_reg_472_reg[0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_scaled_fixed2ieee_fu_341/\out_bits_0_V_reg_467_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p_str4_U/xillybus_wrapper_dEe_rom_U/q0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p_str5_U/xillybus_wrapper_eOg_rom_U/q0_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_scaled_fixed2ieee_fu_341/\ap_return_preg_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln7_2_reg_1210_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln7_2_reg_1210_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln7_2_reg_1210_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln7_2_reg_1210_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln7_reg_1162_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln7_1_reg_1197_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln7_2_reg_1210_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[47]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[46]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[45]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[44]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[43]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[42]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[41]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[40]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[39]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[38]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[37]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[36]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[35]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[34]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[33]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[32]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[31]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[30]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[29]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[28]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[27]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[26]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[25]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[24]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[23]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[22]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[21]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[20]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[19]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[18]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[17]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[16]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[15]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[14]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[13]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[12]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[11]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[10]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[9]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[8]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[7]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[6]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[5]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[4]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[3]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[2]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[1]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[0]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[47]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[46]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[45]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[44]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[43]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[42]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[41]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[40]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[39]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[38]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[37]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[36]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[35]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[34]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[33]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[32]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[31]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[30]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[29]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[28]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[27]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[26]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[25]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[24]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[23]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[22]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[21]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[20]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[19]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[18]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[17]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[16]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[15]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[14]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[13]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[12]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[11]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[10]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[9]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[8]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[7]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[6]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[5]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[4]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[3]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[2]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[1]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff2_reg[0]) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[47]__0) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[46]__0) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[45]__0) is unused and will be removed from module xillybus_wrapper.
+WARNING: [Synth 8-3332] Sequential element (xillybus_wrapper_jbC_U8/xillybus_wrapper_jbC_MulnS_0_U/buff1_reg[44]__0) is unused and will be removed from module xillybus_wrapper.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ush_reg_1319_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_scaled_fixed2ieee_fu_341/\c_1_019_reg_96_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_scaled_fixed2ieee_fu_341/\c_0_020_reg_84_reg[5] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 952.594 ; gain = 385.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------------+------------+---------------+----------------+
+|Module Name              | RTL Object | Depth x Width | Implemented As | 
++-------------------------+------------+---------------+----------------+
+|xillybus_wrapper_cud_rom | p_0_out    | 16x7          | LUT            | 
+|xillybus_wrapper_dEe_rom | p_0_out    | 4x7           | LUT            | 
+|xillybus_wrapper_eOg_rom | p_0_out    | 2x4           | LUT            | 
+|xillybus_wrapper_fYi_rom | p_0_out    | 16x100        | LUT            | 
+|xillybus_wrapper_g8j_rom | p_0_out    | 256x30        | LUT            | 
+|xillybus_wrapper_hbi_rom | p_0_out    | 256x23        | LUT            | 
+|xillybus_wrapper_ibs_rom | p_0_out    | 256x15        | LUT            | 
+|xilly_decprint_pobkb_rom | p_0_out    | 16x28         | LUT            | 
+|xillybus_wrapper_g8j     | p_0_out    | 256x30        | LUT            | 
+|xillybus_wrapper_hbi     | p_0_out    | 256x23        | LUT            | 
+|xillybus_wrapper_ibs     | p_0_out    | 256x15        | LUT            | 
+|xilly_decprint           | p_0_out    | 16x28         | LUT            | 
+|xillybus_wrapper         | p_0_out    | 16x100        | LUT            | 
+|xillybus_wrapper         | p_0_out    | 16x7          | LUT            | 
++-------------------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++--------------------------+----------------------------------------+----------------+----------------------+----------------+
+|Module Name               | RTL Object                             | Inference      | Size (Depth x Width) | Primitives     | 
++--------------------------+----------------------------------------+----------------+----------------------+----------------+
+|grp_xilly_decprint_fu_347 | out_U/xilly_decprint_out_ram_U/ram_reg | User Attribute | 16 x 8               | RAM16X1S x 8   | 
++--------------------------+----------------------------------------+----------------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|xillybus_wrapper | (A2*B'')'             | 25     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|xillybus_wrapper | (PCIN>>17)+(A2*B'')'  | 25     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|xillybus_wrapper | (PCIN>>17)+(A2*B'')'  | 25     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|xillybus_wrapper | (PCIN>>17)+(A''*B'')' | 25     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|xillybus_wrapper | (PCIN>>17)+(A''*B'')' | 25     | 13     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|xillybus_wrapper | A2*B2                 | 23     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|xillybus_wrapper | (PCIN>>17)+A2*B2      | 23     | 6      | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|xillybus_wrapper | A2*B2                 | 15     | 15     | -      | -      | 30     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|xillybus_wrapper | A2*B2                 | 16     | 15     | -      | -      | 31     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|xillybus_wrapper | A*B2                  | 18     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|xillybus_wrapper | (PCIN>>17)+A2*B       | 13     | 13     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|xillybus_wrapper | A2*B                  | 18     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|xillybus_wrapper | (PCIN>>17)+A2*B       | 18     | 13     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
++-----------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 998.234 ; gain = 431.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1005.223 ; gain = 438.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++--------------------------+----------------------------------------+----------------+----------------------+----------------+
+|Module Name               | RTL Object                             | Inference      | Size (Depth x Width) | Primitives     | 
++--------------------------+----------------------------------------+----------------+----------------------+----------------+
+|grp_xilly_decprint_fu_347 | out_U/xilly_decprint_out_ram_U/ram_reg | User Attribute | 16 x 8               | RAM16X1S x 8   | 
++--------------------------+----------------------------------------+----------------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1051.359 ; gain = 484.414
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1060.508 ; gain = 493.562
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1060.508 ; gain = 493.562
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1060.508 ; gain = 493.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1060.508 ; gain = 493.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1060.508 ; gain = 493.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1060.508 ; gain = 493.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    74|
+|2     |DSP48E1    |     1|
+|3     |DSP48E1_1  |     1|
+|4     |DSP48E1_10 |     1|
+|5     |DSP48E1_11 |     1|
+|6     |DSP48E1_2  |     1|
+|7     |DSP48E1_3  |     1|
+|8     |DSP48E1_4  |     1|
+|9     |DSP48E1_5  |     2|
+|10    |DSP48E1_6  |     1|
+|11    |DSP48E1_7  |     1|
+|12    |DSP48E1_8  |     1|
+|13    |DSP48E1_9  |     1|
+|14    |LUT1       |    75|
+|15    |LUT2       |   101|
+|16    |LUT3       |   166|
+|17    |LUT4       |   348|
+|18    |LUT5       |   322|
+|19    |LUT6       |   755|
+|20    |MUXF7      |    99|
+|21    |MUXF8      |    49|
+|22    |RAM16X1S   |     7|
+|23    |FDRE       |  1032|
+|24    |FDSE       |    61|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------------------------+-----------------------------+------+
+|      |Instance                           |Module                       |Cells |
++------+-----------------------------------+-----------------------------+------+
+|1     |top                                |                             |  3102|
+|2     |  grp_scaled_fixed2ieee_fu_341     |scaled_fixed2ieee            |   720|
+|3     |  grp_xilly_decprint_fu_347        |xilly_decprint               |   344|
+|4     |    out_U                          |xilly_decprint_out           |    74|
+|5     |      xilly_decprint_out_ram_U     |xilly_decprint_out_ram       |    74|
+|6     |    powers10_U                     |xilly_decprint_pobkb         |    46|
+|7     |      xilly_decprint_pobkb_rom_U   |xilly_decprint_pobkb_rom     |    46|
+|8     |  p_str3_U                         |xillybus_wrapper_cud         |    14|
+|9     |    xillybus_wrapper_cud_rom_U     |xillybus_wrapper_cud_rom     |    14|
+|10    |  p_str4_U                         |xillybus_wrapper_dEe         |    12|
+|11    |    xillybus_wrapper_dEe_rom_U     |xillybus_wrapper_dEe_rom     |    12|
+|12    |  p_str5_U                         |xillybus_wrapper_eOg         |     2|
+|13    |    xillybus_wrapper_eOg_rom_U     |xillybus_wrapper_eOg_rom     |     2|
+|14    |  ref_4oPi_table_100_V_U           |xillybus_wrapper_fYi         |   356|
+|15    |    xillybus_wrapper_fYi_rom_U     |xillybus_wrapper_fYi_rom     |   356|
+|16    |  second_order_float_2_U           |xillybus_wrapper_g8j         |   237|
+|17    |    xillybus_wrapper_g8j_rom_U     |xillybus_wrapper_g8j_rom     |    64|
+|18    |  second_order_float_3_U           |xillybus_wrapper_hbi         |   166|
+|19    |    xillybus_wrapper_hbi_rom_U     |xillybus_wrapper_hbi_rom     |    17|
+|20    |  second_order_float_s_U           |xillybus_wrapper_ibs         |    87|
+|21    |    xillybus_wrapper_ibs_rom_U     |xillybus_wrapper_ibs_rom     |    18|
+|22    |  xillybus_wrapper_jbC_U8          |xillybus_wrapper_jbC         |    72|
+|23    |    xillybus_wrapper_jbC_MulnS_0_U |xillybus_wrapper_jbC_MulnS_0 |    72|
+|24    |  xillybus_wrapper_mb6_U12         |xillybus_wrapper_mb6         |   108|
+|25    |    xillybus_wrapper_mb6_DSP48_0_U |xillybus_wrapper_mb6_DSP48_0 |   108|
+|26    |  xillybus_wrapper_ncg_U13         |xillybus_wrapper_ncg         |    40|
+|27    |    xillybus_wrapper_ncg_DSP48_1_U |xillybus_wrapper_ncg_DSP48_1 |    40|
++------+-----------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1060.508 ; gain = 493.562
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 322 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:01:06 . Memory (MB): peak = 1060.508 ; gain = 352.562
+Synthesis Optimization Complete : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1060.508 ; gain = 493.562
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 242 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1076.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 7 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+230 Infos, 162 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:20 . Memory (MB): peak = 1076.586 ; gain = 779.480
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1076.586 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/ProjectsVivado/Coprocessing_BLE_Driver/VivadoHLS/coprocess/example/impl/verilog/project.runs/synth_1/xillybus_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file xillybus_wrapper_utilization_synth.rpt -pb xillybus_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  6 13:23:04 2021...

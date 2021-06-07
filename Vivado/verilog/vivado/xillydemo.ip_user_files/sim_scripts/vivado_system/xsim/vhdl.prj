@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/vivado_system/ip/vivado_system_rst_processing_system7_0_100M_0/sim/vivado_system_rst_processing_system7_0_100M_0.vhd" \
+
+nosort

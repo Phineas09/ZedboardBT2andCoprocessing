@@ -1,0 +1,224 @@
+
+
+================================================================
+== Vivado HLS Report for 'xilly_decprint'
+================================================================
+* Date:           Sun Jun  6 13:18:20 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        coprocess
+* Solution:       example
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     4.321|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |             |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1     |    ?|    ?|         ?|          -|          -|    10|    no    |
+        | + Loop 1.1  |    ?|    ?|         1|          -|          -|     ?|    no    |
+        |- Loop 2     |    ?|    ?|         ?|          -|          -|     ?|    no    |
+        | + Loop 2.1  |    ?|    ?|         1|          -|          -|     ?|    no    |
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 1
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 7
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 5 
+3 --> 4 
+4 --> 4 2 
+5 --> 6 
+6 --> 7 
+7 --> 7 5 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%v_0 = alloca i32"   --->   Operation 8 'alloca' 'v_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%val_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %val_r) nounwind"   --->   Operation 9 'read' 'val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%out = alloca [11 x i8], align 1" [coprocess/example/src/xilly_debug.c:32]   --->   Operation 10 'alloca' 'out' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 11> <RAM>
+ST_1 : Operation 11 [1/1] (1.76ns)   --->   "store i32 %val_read, i32* %v_0" [coprocess/example/src/xilly_debug.c:37]   --->   Operation 11 'store' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 12 [1/1] (1.76ns)   --->   "br label %1" [coprocess/example/src/xilly_debug.c:37]   --->   Operation 12 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%first_0 = phi i32 [ 9, %0 ], [ %first_1, %3 ]"   --->   Operation 13 'phi' 'first_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%first = phi i4 [ 0, %0 ], [ %i, %3 ]"   --->   Operation 14 'phi' 'first' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln37 = zext i4 %first to i32" [coprocess/example/src/xilly_debug.c:37]   --->   Operation 15 'zext' 'zext_ln37' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (1.30ns)   --->   "%icmp_ln37 = icmp eq i4 %first, -6" [coprocess/example/src/xilly_debug.c:37]   --->   Operation 16 'icmp' 'icmp_ln37' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 10, i64 10, i64 10) nounwind"   --->   Operation 17 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (1.73ns)   --->   "%i = add i4 %first, 1" [coprocess/example/src/xilly_debug.c:37]   --->   Operation 18 'add' 'i' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "br i1 %icmp_ln37, label %4, label %.preheader.preheader" [coprocess/example/src/xilly_debug.c:37]   --->   Operation 19 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln39 = zext i4 %first to i64" [coprocess/example/src/xilly_debug.c:39]   --->   Operation 20 'zext' 'zext_ln39' <Predicate = (!icmp_ln37)> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%powers10_addr = getelementptr [10 x i28]* @powers10, i64 0, i64 %zext_ln39" [coprocess/example/src/xilly_debug.c:39]   --->   Operation 21 'getelementptr' 'powers10_addr' <Predicate = (!icmp_ln37)> <Delay = 0.00>
+ST_2 : Operation 22 [2/2] (3.25ns)   --->   "%powers10_load = load i28* %powers10_addr, align 4" [coprocess/example/src/xilly_debug.c:39]   --->   Operation 22 'load' 'powers10_load' <Predicate = (!icmp_ln37)> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 28> <Depth = 10> <ROM>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%out_addr = getelementptr inbounds [11 x i8]* %out, i64 0, i64 10" [coprocess/example/src/xilly_debug.c:50]   --->   Operation 23 'getelementptr' 'out_addr' <Predicate = (icmp_ln37)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (2.32ns)   --->   "store i8 0, i8* %out_addr, align 1" [coprocess/example/src/xilly_debug.c:50]   --->   Operation 24 'store' <Predicate = (icmp_ln37)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 11> <RAM>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%trunc_ln6 = trunc i32 %first_0 to i5" [coprocess/example/src/xilly_debug.c:6->coprocess/example/src/xilly_debug.c:52]   --->   Operation 25 'trunc' 'trunc_ln6' <Predicate = (icmp_ln37)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (1.76ns)   --->   "br label %5" [coprocess/example/src/xilly_debug.c:7->coprocess/example/src/xilly_debug.c:52]   --->   Operation 26 'br' <Predicate = (icmp_ln37)> <Delay = 1.76>
+
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 27 [1/2] (3.25ns)   --->   "%powers10_load = load i28* %powers10_addr, align 4" [coprocess/example/src/xilly_debug.c:39]   --->   Operation 27 'load' 'powers10_load' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 28> <Depth = 10> <ROM>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%sext_ln39 = sext i28 %powers10_load to i30" [coprocess/example/src/xilly_debug.c:39]   --->   Operation 28 'sext' 'sext_ln39' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln39_1 = zext i30 %sext_ln39 to i32" [coprocess/example/src/xilly_debug.c:39]   --->   Operation 29 'zext' 'zext_ln39_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (1.76ns)   --->   "br label %.preheader" [coprocess/example/src/xilly_debug.c:39]   --->   Operation 30 'br' <Predicate = true> <Delay = 1.76>
+
+State 4 <SV = 3> <Delay = 4.32>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%x_0 = phi i8 [ %x, %2 ], [ 0, %.preheader.preheader ]"   --->   Operation 31 'phi' 'x_0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%v_0_load = load i32* %v_0"   --->   Operation 32 'load' 'v_0_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 33 [1/1] (2.47ns)   --->   "%icmp_ln39 = icmp ult i32 %v_0_load, %zext_ln39_1" [coprocess/example/src/xilly_debug.c:39]   --->   Operation 33 'icmp' 'icmp_ln39' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 34 [1/1] (1.91ns)   --->   "%x = add i8 %x_0, 1" [coprocess/example/src/xilly_debug.c:41]   --->   Operation 34 'add' 'x' <Predicate = true> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "br i1 %icmp_ln39, label %3, label %2" [coprocess/example/src/xilly_debug.c:39]   --->   Operation 35 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (2.55ns)   --->   "%v = sub i32 %v_0_load, %zext_ln39_1" [coprocess/example/src/xilly_debug.c:40]   --->   Operation 36 'sub' 'v' <Predicate = (!icmp_ln39)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 37 [1/1] (1.76ns)   --->   "store i32 %v, i32* %v_0" [coprocess/example/src/xilly_debug.c:42]   --->   Operation 37 'store' <Predicate = (!icmp_ln39)> <Delay = 1.76>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "br label %.preheader" [coprocess/example/src/xilly_debug.c:42]   --->   Operation 38 'br' <Predicate = (!icmp_ln39)> <Delay = 0.00>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%or_ln44 = or i8 %x_0, 48" [coprocess/example/src/xilly_debug.c:44]   --->   Operation 39 'or' 'or_ln44' <Predicate = (icmp_ln39)> <Delay = 0.00>
+ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%out_addr_2 = getelementptr inbounds [11 x i8]* %out, i64 0, i64 %zext_ln39" [coprocess/example/src/xilly_debug.c:44]   --->   Operation 40 'getelementptr' 'out_addr_2' <Predicate = (icmp_ln39)> <Delay = 0.00>
+ST_4 : Operation 41 [1/1] (2.32ns)   --->   "store i8 %or_ln44, i8* %out_addr_2, align 1" [coprocess/example/src/xilly_debug.c:44]   --->   Operation 41 'store' <Predicate = (icmp_ln39)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 11> <RAM>
+ST_4 : Operation 42 [1/1] (1.55ns)   --->   "%icmp_ln46 = icmp ne i8 %x_0, 0" [coprocess/example/src/xilly_debug.c:46]   --->   Operation 42 'icmp' 'icmp_ln46' <Predicate = (icmp_ln39)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 43 [1/1] (2.47ns)   --->   "%icmp_ln46_1 = icmp sgt i32 %first_0, %zext_ln37" [coprocess/example/src/xilly_debug.c:46]   --->   Operation 43 'icmp' 'icmp_ln46_1' <Predicate = (icmp_ln39)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 44 [1/1] (0.00ns) (grouped into LUT with out node first_1)   --->   "%and_ln46 = and i1 %icmp_ln46, %icmp_ln46_1" [coprocess/example/src/xilly_debug.c:46]   --->   Operation 44 'and' 'and_ln46' <Predicate = (icmp_ln39)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 45 [1/1] (0.97ns) (out node of the LUT)   --->   "%first_1 = select i1 %and_ln46, i32 %zext_ln37, i32 %first_0" [coprocess/example/src/xilly_debug.c:46]   --->   Operation 45 'select' 'first_1' <Predicate = (icmp_ln39)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "br label %1" [coprocess/example/src/xilly_debug.c:37]   --->   Operation 46 'br' <Predicate = (icmp_ln39)> <Delay = 0.00>
+
+State 5 <SV = 2> <Delay = 4.10>
+ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%p_0_rec_i = phi i64 [ 0, %4 ], [ %add_ln9, %6 ]" [coprocess/example/src/xilly_debug.c:9->coprocess/example/src/xilly_debug.c:52]   --->   Operation 47 'phi' 'p_0_rec_i' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 48 [1/1] (0.00ns)   --->   "%empty_29 = trunc i64 %p_0_rec_i to i5" [coprocess/example/src/xilly_debug.c:9->coprocess/example/src/xilly_debug.c:52]   --->   Operation 48 'trunc' 'empty_29' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 49 [1/1] (1.78ns)   --->   "%sum_i = add i5 %empty_29, %trunc_ln6" [coprocess/example/src/xilly_debug.c:9->coprocess/example/src/xilly_debug.c:52]   --->   Operation 49 'add' 'sum_i' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 50 [1/1] (0.00ns)   --->   "%sum_i_cast = zext i5 %sum_i to i64" [coprocess/example/src/xilly_debug.c:9->coprocess/example/src/xilly_debug.c:52]   --->   Operation 50 'zext' 'sum_i_cast' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 51 [1/1] (0.00ns)   --->   "%out_addr_1 = getelementptr [11 x i8]* %out, i64 0, i64 %sum_i_cast" [coprocess/example/src/xilly_debug.c:9->coprocess/example/src/xilly_debug.c:52]   --->   Operation 51 'getelementptr' 'out_addr_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 52 [2/2] (2.32ns)   --->   "%out_load = load i8* %out_addr_1, align 1" [coprocess/example/src/xilly_debug.c:7->coprocess/example/src/xilly_debug.c:52]   --->   Operation 52 'load' 'out_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 11> <RAM>
+ST_5 : Operation 53 [1/1] (3.52ns)   --->   "%add_ln9 = add i64 1, %p_0_rec_i" [coprocess/example/src/xilly_debug.c:9->coprocess/example/src/xilly_debug.c:52]   --->   Operation 53 'add' 'add_ln9' <Predicate = true> <Delay = 3.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 3> <Delay = 3.87>
+ST_6 : Operation 54 [1/2] (2.32ns)   --->   "%out_load = load i8* %out_addr_1, align 1" [coprocess/example/src/xilly_debug.c:7->coprocess/example/src/xilly_debug.c:52]   --->   Operation 54 'load' 'out_load' <Predicate = true> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 11> <RAM>
+ST_6 : Operation 55 [1/1] (1.55ns)   --->   "%icmp_ln7 = icmp eq i8 %out_load, 0" [coprocess/example/src/xilly_debug.c:7->coprocess/example/src/xilly_debug.c:52]   --->   Operation 55 'icmp' 'icmp_ln7' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 56 [1/1] (0.00ns)   --->   "br i1 %icmp_ln7, label %xilly_puts.3.exit, label %.preheader.i.preheader" [coprocess/example/src/xilly_debug.c:7->coprocess/example/src/xilly_debug.c:52]   --->   Operation 56 'br' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 57 [1/1] (0.00ns)   --->   "br label %.preheader.i" [coprocess/example/src/xilly_debug.c:8->coprocess/example/src/xilly_debug.c:52]   --->   Operation 57 'br' <Predicate = (!icmp_ln7)> <Delay = 0.00>
+ST_6 : Operation 58 [1/1] (0.00ns)   --->   "ret void" [coprocess/example/src/xilly_debug.c:53]   --->   Operation 58 'ret' <Predicate = (icmp_ln7)> <Delay = 0.00>
+
+State 7 <SV = 4> <Delay = 0.00>
+ST_7 : Operation 59 [1/1] (0.00ns)   --->   "%debug_ready_load = load volatile i8* @debug_ready, align 1" [coprocess/example/src/xilly_debug.c:8->coprocess/example/src/xilly_debug.c:52]   --->   Operation 59 'load' 'debug_ready_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 60 [1/1] (0.00ns)   --->   "%trunc_ln8 = trunc i8 %debug_ready_load to i1" [coprocess/example/src/xilly_debug.c:8->coprocess/example/src/xilly_debug.c:52]   --->   Operation 60 'trunc' 'trunc_ln8' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 61 [1/1] (0.00ns)   --->   "br i1 %trunc_ln8, label %6, label %.preheader.i" [coprocess/example/src/xilly_debug.c:8->coprocess/example/src/xilly_debug.c:52]   --->   Operation 61 'br' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 62 [1/1] (0.00ns)   --->   "store volatile i8 %out_load, i8* @debug_out, align 1" [coprocess/example/src/xilly_debug.c:9->coprocess/example/src/xilly_debug.c:52]   --->   Operation 62 'store' <Predicate = (trunc_ln8)> <Delay = 0.00>
+ST_7 : Operation 63 [1/1] (0.00ns)   --->   "br label %5" [coprocess/example/src/xilly_debug.c:10->coprocess/example/src/xilly_debug.c:52]   --->   Operation 63 'br' <Predicate = (trunc_ln8)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	'alloca' operation ('val') [5]  (0 ns)
+	'store' operation ('store_ln37', coprocess/example/src/xilly_debug.c:37) of variable 'val' on local variable 'val' [8]  (1.77 ns)
+
+ <State 2>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', coprocess/example/src/xilly_debug.c:37) [12]  (0 ns)
+	'getelementptr' operation ('powers10_addr', coprocess/example/src/xilly_debug.c:39) [20]  (0 ns)
+	'load' operation ('powers10_load', coprocess/example/src/xilly_debug.c:39) on array 'powers10' [21]  (3.25 ns)
+
+ <State 3>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('powers10_load', coprocess/example/src/xilly_debug.c:39) on array 'powers10' [21]  (3.25 ns)
+
+ <State 4>: 4.32ns
+The critical path consists of the following:
+	'load' operation ('v_0_load') on local variable 'val' [27]  (0 ns)
+	'sub' operation ('v', coprocess/example/src/xilly_debug.c:40) [32]  (2.55 ns)
+	'store' operation ('store_ln42', coprocess/example/src/xilly_debug.c:42) of variable 'v', coprocess/example/src/xilly_debug.c:40 on local variable 'val' [33]  (1.77 ns)
+
+ <State 5>: 4.1ns
+The critical path consists of the following:
+	'phi' operation ('p_0_rec_i', coprocess/example/src/xilly_debug.c:9->coprocess/example/src/xilly_debug.c:52) with incoming values : ('add_ln9', coprocess/example/src/xilly_debug.c:9->coprocess/example/src/xilly_debug.c:52) [50]  (0 ns)
+	'add' operation ('sum_i', coprocess/example/src/xilly_debug.c:9->coprocess/example/src/xilly_debug.c:52) [52]  (1.78 ns)
+	'getelementptr' operation ('out_addr_1', coprocess/example/src/xilly_debug.c:9->coprocess/example/src/xilly_debug.c:52) [54]  (0 ns)
+	'load' operation ('out_load', coprocess/example/src/xilly_debug.c:7->coprocess/example/src/xilly_debug.c:52) on array 'out', coprocess/example/src/xilly_debug.c:32 [55]  (2.32 ns)
+
+ <State 6>: 3.87ns
+The critical path consists of the following:
+	'load' operation ('out_load', coprocess/example/src/xilly_debug.c:7->coprocess/example/src/xilly_debug.c:52) on array 'out', coprocess/example/src/xilly_debug.c:32 [55]  (2.32 ns)
+	'icmp' operation ('icmp_ln7', coprocess/example/src/xilly_debug.c:7->coprocess/example/src/xilly_debug.c:52) [56]  (1.55 ns)
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

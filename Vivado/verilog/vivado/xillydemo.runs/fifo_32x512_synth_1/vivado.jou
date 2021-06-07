@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jun  6 13:27:15 2021
+# Process ID: 24564
+# Current directory: D:/ProjectsVivado/Coprocessing_BLE_Driver/Vivado/verilog/vivado/xillydemo.runs/fifo_32x512_synth_1
+# Command line: vivado.exe -log fifo_32x512.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_32x512.tcl
+# Log file: D:/ProjectsVivado/Coprocessing_BLE_Driver/Vivado/verilog/vivado/xillydemo.runs/fifo_32x512_synth_1/fifo_32x512.vds
+# Journal file: D:/ProjectsVivado/Coprocessing_BLE_Driver/Vivado/verilog/vivado/xillydemo.runs/fifo_32x512_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fifo_32x512.tcl -notrace
